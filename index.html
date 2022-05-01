@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2Fgudetama-tamagotchi-3.jpg?v=1618267606784" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Giga Pets (The ones we should <em>NEVER</em> forget about)
+      </h1>
+    </header>
+                                                    <!-- First pet -->
+    <main>
+      <audio id="intro" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2F131660__bertrof__game-sound-correct.wav?v=1618268607033" display="none">         </audio>
+      <script>
+      document.getElementById("intro").play();
+      </script>
+      <div class="flexbox">
+        <div class="flexbox-item">
+          <section class="pet-image-container">
+           <!-- Replace pet image with your own pet image -->
+            <img class="pet-image" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2FIMG_0407.JPG?v=1618273966029">
+          </section>
+          <!-- Somewhere for the notification to appear -->
+          <div class="popup-area"></div>
+          <section class="dashboard">
+            <div>Name: <strong><span class="name"></span></strong></div>
+            <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+            <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+            <div>Number of Barks: <strong><span class="barks"></span></strong></div>
+            <div class="button-container">
+              <button class="treat-button">
+                 <audio id="treat" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2Fmixkit-animated-small-group-applause-523.wav?v=1617852345264" display="none"> </audio>
+                Treat
+              </button>
+              <button class="play-button">
+                <audio id="play" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2Fmixkit-basketball-falling-indoor-394.wav?v=1617852521717" display="none"> </audio>
+                Play
+              </button>
+              <button class="exercise-button">
+                <audio id="exercise" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2F408475__marnenagel__dog-breathing.wav?v=1618269654326" display="none"> </audio>
+                Exercise
+              </button>
+              <button class="speak-button">
+                <audio id="speak" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2F418105__crazymonke9__single-dog-bark-3.wav?v=1618269398022" display="none"> </audio>
+                Speak
+              </button>
+              <button class="add-button">
+                <audio id="add" src="https://cdn.glitch.com/73fe3121-3b2a-4e19-8eb4-3c3931ccbee9%2FDog%20Woof-SoundBible.com-457935112.mp3?v=1617847215861" display="none"></audio>
+                Add 
+              </button>
+            </div>
+          </section>
+        </div>      
+                              <!--- second pet will be inserted here -->
+    </div>
+    </main>
+        <!--- Attempts to do it without JQuery -->
+    <!-- Your web-app is https, so your scripts need to be too -->
+<!--     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script> -->
+  </body>
+</html>
